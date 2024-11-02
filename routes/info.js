@@ -1,14 +1,7 @@
-// routes/info.js
 const express = require('express');
 const router = express.Router();
+const infoController = require('../controllers/infoController');
 
-router.get('/', (req, res) => {
-    res.json({
-        data: {
-            name: "Nguyen Hai Dang",
-            code: "HELO1234"
-        }
-    });
-});
+router.get('/', infoController.getInfo);
 
 module.exports = router;

@@ -1,4 +1,3 @@
-// app.js
 const express = require('express');
 const bodyParser = require('body-parser');
 const connectDB = require('./config/database');
@@ -19,5 +18,5 @@ app.use('/age', ageRoutes);
 app.use('/todos', todoRoutes);
 
 app.listen(PORT, () => {
-    console.log(`Server running on http://localhost:${PORT}`);
+    console.log(`Server running on port ${PORT}`);
 });
